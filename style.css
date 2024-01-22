@@ -1,0 +1,431 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container{
+    width: 100%;
+    padding: 0 4%;
+}
+.navbar{
+    width: 100%; 
+    height: 70px;
+    padding: 0 4%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+.nav__input{
+    display: flex;
+}
+.nav__input input{
+    padding: 2% 1%; 
+    width: 500px;
+    border-radius: 8px 0  0 8px;
+    border: 1px solid #767474;
+    border-right: none;
+}
+.nav__search{
+    width: 40px;
+    background: rgb(65, 159, 253);
+    color: #fff;
+    border-radius: 0 8px 8px 0;
+    border: 1px solid #767474;
+    border-left: none;
+    text-align: center;
+    padding-top: 10px;
+    cursor: pointer;
+}
+.nav__icons{
+    display: flex;
+    align-items: center;
+}
+.nav__icons-user{
+    align-items: center;
+    display: block;
+}
+.nav__icons-user h4{
+    font-weight: 500;
+    color: #c3c1c1;
+}
+.nav__icons i{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 4% 0;
+}
+#home{
+    display: none;
+}
+/* Navbar - Media - start */
+@media screen and (max-width: 1000px) {
+    .nav__input input{
+        width: 400px;
+    }
+    .nav__icons-user{
+        font-size: 14px;
+    }
+    .nav__search{
+        padding-top: 6px;
+    }
+}
+@media screen and (max-width: 910px) {
+    .nav__input input{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 790px) {
+    .nav__input input{
+        font-size: 12px;
+    }
+    .nav__search{
+        padding: 1% 0;
+    }
+    .nav__icons-user{
+        display: none;
+    }
+    .nav__icons i{
+        padding: 12% 0;
+    }
+}
+@media screen and (max-width: 560px) {
+    .nav__icons{
+        position: fixed;
+        top: 93%;
+        box-shadow: 0 0 14px #ddd;
+        width: 100%;
+        height: 39px;
+        left: 0;
+        font-size: 20px;
+        justify-content: center;
+        background: #fff;
+    }
+    .nav__icons i{
+        border: none;
+        padding: 8px;
+        margin: 4%;
+    }
+    .nav__input input{
+        width: 250px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .nav__input input{
+        width: 200px;
+    }
+    .nav__logo{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 380px) {
+    .nav__input input{
+        width: 160px;
+        padding: 4% 2%;
+    }
+    .nav__icons{
+        font-size: 18px;
+    }
+    .nav__search{
+        padding-top: 6px;
+    }
+    .nav__icons i{
+        font-size: 16px; 
+    }
+}
+/* Navbar - Media - end */
+
+
+
+
+
+.title{
+    margin: 2% 0;
+}
+.wrapper{
+    display: flex;
+    height: 73vh;
+    gap: 40px;
+    /* background: dodgerblue; */
+}
+.cart__products{
+    width: 75%;
+   
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1%;
+}
+
+.cart__clothes img{
+    width: 90px;
+    display: block;
+}
+.cart__img{
+    display: flex;
+    gap: 100px;
+}
+.cart__title p{
+    margin: 13px 0;
+}
+.cart__title{
+    margin-left: -8%;
+}
+
+.number{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    margin: 20% 0;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 0 7px;
+}
+.number__two{
+    width: 100%;
+    height: 30px;
+    border: 1px solid #ddd;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    padding: 0 7px;
+}
+.price h3{
+    margin: 13% 0 3% 0;
+}
+.cart__remove{
+    display: flex;
+    gap: 40px;
+}
+.hart{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 6%;
+    margin-top: 17%;
+    border: 1px solid #ddd;
+}
+.remove{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    padding-top: 5%;
+    margin-top: 17%;
+    border: 1px solid #ddd;
+}
+.hart__two{
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    padding-top: 6%;
+    border: 1px solid #ddd;
+}
+.remove__two{
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    padding-top: 5%;
+    border: 1px solid #ddd;
+}
+
+.cart__payment{
+    width: 21.5%;
+    height: 100%;
+}
+.cart__coupon{
+    width: 100%;
+    height: 100px;
+    border: 1px solid #ddd;
+    padding: 2% 4%;
+    margin-bottom: 4%;
+    border-radius: 5px;
+}
+.cart__coupon p{
+    margin: 5px 0;
+}
+.coupon__inp{
+    display: flex;
+}
+.coupon__inp input{
+    width: 100%;
+    padding: 2%;
+    border-radius: 5px 0 0 5px;
+    border: 1.6px solid #ddd;
+    border-right: none;
+}
+.apply{
+    padding: 2%;
+    background: dodgerblue;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+}
+.cart__price{
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ddd;
+    padding: 2% 4%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    border-radius: 5px;
+}
+.cart__price-hr{
+    width: 100%;
+    display: block;
+}
+.cart__price i{
+    font-size: 25px;
+    margin: 4%;
+}
+
+/* cart - media - start */
+@media screen and (max-width: 1317px) {
+    .wrapper{
+        gap: 20px;
+    }
+    .cart__img{
+        gap: 30px;
+    }
+    .cart__title{
+        margin-left: -0%;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .cart__img{
+        gap: 30px;
+    }
+    .cart__title{
+        margin-left: -0%;
+    }
+    .cart__remove{
+        gap: 20px;
+    }
+    .cart__clothes img{
+        width: 70px;
+    }
+}
+@media screen and (max-width: 940px) {
+    .cart__img{
+        gap: 30px;
+    }
+    .cart__title{
+        margin-left: -0%;
+    }
+    .cart__remove{
+        gap: 20px;
+    }
+    .cart__clothes img{
+        width: 80px;
+    }
+    .wrapper{
+        display: block;
+    }
+    .cart__products{
+        width: 100%;
+    }
+    .cart__payment{
+        width: 50%;
+        height: 100%;
+        margin: 3% 0;
+    }
+}
+@media screen and (max-width: 720px) {
+    .cart__img{
+        gap: 14px;
+    }
+    .cart__title{
+        margin-left: -0%;
+    }
+    .cart__remove{
+        gap: 14px;
+    }
+    .cart__clothes img{
+        width: 70px;
+    }
+    .cart__products h3{
+        font-size: 16px;
+    }
+    .cart__products p{
+        font-size: 14px;
+    }
+    .price h3,p{
+        font-size: 15px;
+    }
+    .remove{
+        font-size: 13px;
+        width: 80px;
+        padding-top: 6%;
+    }
+    .price__three h3,p{
+        font-size: 15px;
+    }
+    .remove__two{
+        font-size: 13px;
+        width: 80px;
+        padding-top: 6%;
+    }
+}
+@media screen and (max-width: 560px) {
+    .hart__two{
+        width: 34px;
+    }
+    .hart{
+        width: 34px;
+    }
+    .cart__payment{
+        width: 100%;
+        height: 100%;
+        margin: 3% 0;
+    }
+    .cart__remove{
+        display: flex;
+        gap: 40px;
+    }
+    .cart__img{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+    }
+    .cart__clothes img{
+        width: 90px;
+        display: flex;
+    }
+    .number{
+        width: 40%;
+        margin: 5% 0;
+        gap: 20px;
+    }
+    .number__two{
+        width: 40%;
+        margin: 5% 0;
+        gap: 20px;
+    }
+    .remove{
+        padding-top: 6%;
+        margin: 5% 0;
+        border: 1px solid #ddd;
+        height: 35px;
+    }
+    .remove__two{
+        padding-top: 5%;
+        margin: 1% 0 4%;
+        border: 1px solid #ddd;
+        height: 35px;
+    }
+    .hart{
+        margin-top: 4%;
+        height: 38px;
+    }
+    .hart__two{
+        height: 38px;
+    }
+    .title{
+        font-size: 19px;
+    }
+    #home{
+        display: block;
+    }
+}
+/* cart - media - end */
