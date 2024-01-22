@@ -95,7 +95,7 @@
 @media screen and (max-width: 560px) {
     .nav__icons{
         position: fixed;
-        top: 100%;
+        top: 95%;
         box-shadow: 0 0 14px #ddd;
         width: 100%;
         height: 39px;
